@@ -1,6 +1,8 @@
 import { getInfoLinks, getParkData, parkInfoLinks } from "./parkService.mjs";
 import { parkInfoTemplate, mediaCardTemplate, footerTemplate } from "./templates.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
+import "../css/style.css";
+import "../css/home.css";
 
 const parkData = getParkData();
 
