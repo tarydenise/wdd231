@@ -13,9 +13,8 @@
   overflow: hidden;
 }
 
-svg {
-  background-color: var(--bs-black);
-  fill: white;
+.disclaimer {
+  padding: 0 1rem;
 }
 
 .alert-information {
@@ -32,4 +31,12 @@ svg {
 
 .alert-caution {
   color: var(--alert-caution);
+}
+
+.hide {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }

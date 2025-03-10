@@ -1,4 +1,4 @@
-import spritePath from '../images/sprite.symbol.svg';
+import spritePath from "../images/sprite.symbol.svg";
 
 export function parkInfoTemplate(info) {
     return `
@@ -69,12 +69,12 @@ export function alertTemplate(alert) {
 export function visitorCenterTemplate(center) {
     return `
         <li class="visitor-center">
-            <h3>${center.name}</h3>
+            <h4>${center.name}</h4>
             <p>${center.description}</p>
-            <p><strong>Directions:</strong> ${center.directionsInfo}</p>
+            <p>${center.directionsInfo}</p>
         </li>`;
 }
 
-export function activitiesTemplate(activity) {
-    return `<li>${activity.name}</li>`;
+export function activitiesTemplate(activities) {
+    return activities.map((activity) => `<li>${activity.name}</li>`).join("");
 }

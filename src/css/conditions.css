@@ -1,3 +1,9 @@
+/* current conditions styles */
+
+main {
+  padding: 1rem;
+}
+
 /* alerts */
 
 .alerts > ul {
@@ -29,103 +35,13 @@
   flex: 0 0 auto;
 }
 
-/* Visitor Center Styles */
+/* visitor styles */
 
-.visitor-services > details {
-  border: 1px solid var(--bs-grey-3);
-  padding: 1rem;
-  margin: 1rem 0;
-  background: var(--bs-white);
-  border-radius: 5px;
-}
-
-.visitor-center {
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid var(--bs-grey-3);
-}
-
-.visitor-center h3 {
-  font-size: 1.3em;
-  margin-bottom: 0.5rem;
-}
-
-.visitor-center p {
-  margin: 0.3rem 0;
-}
-
-/* Activities Styles */
-
-.activities > details {
-  border: 1px solid var(--bs-grey-3);
-  padding: 1rem;
-  background-color: var(--bs-white);
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-/* .activities details summary {
-    font-weight: bold;
-    font-size: 1.1em;
-    cursor: pointer;
-    color: var(--bs-chathams-blue);
-} */
-
-.activities ul {
-  list-style-type: disc;
-  padding-left: 1.5rem;
-}
-
-.activities li {
-  margin: 0.3rem 0;
-  font-size: 0.95em;
-  color: var(--bs-grey-6);
-}
-
-/* Open/Close Indicator Styles */
-
-details {
-  border: 1px solid var(--bs-grey-3);
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-}
-
-details:hover {
-  border-color: var(--bs-grey-3);
-}
-
-summary {
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  display: flex;
-  align-items: center;
-  position: relative;
+.visitor > details > ul {
   list-style: none;
-  cursor: pointer;
+  padding: 0;
 }
 
-summary::marker {
-  display: none;
-}
-
-summary::before {
-  content: "";
-  background: url("https://byui-cse.github.io/wdd231-course/images/arrow.svg")
-    no-repeat center center;
-  background-size: contain;
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  position: absolute;
-  left: 0.5rem;
-  transition: transform 0.3s ease-in-out;
-}
-
-details[open] summary::before {
-  transform: rotate(180deg);
+.visitor > details li {
+  border-bottom: 1px solid var(--bs-grey-3);
 }
