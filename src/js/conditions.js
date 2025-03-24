@@ -1,7 +1,7 @@
 import "../css/style.css";
 import "../css/conditions.css";
 import { getParkData, getParkAlerts, getVisitorCenterData } from "./parkService.mjs";
-import { activitiesTemplate, alertTemplate, visitorCenterTemplate } from "./templates.mjs";
+import { activityTemplate, alertTemplate, visitorCenterTemplate } from "./templates.mjs";
 import setHeaderFooter from "./setHeaderFooter.mjs";
 
 function setAlerts(alerts) {
@@ -19,7 +19,7 @@ function setVisitorCenters(visitorCenters) {
 
 function setActivities(activities) {
     const activitiesContainer = document.querySelector(".activities ul");
-    const html = activitiesTemplate(activities);
+    const html = activityTemplate(activities);
     activitiesContainer.insertAdjacentHTML("afterbegin", html);
 }
 
