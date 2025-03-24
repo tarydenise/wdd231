@@ -68,7 +68,7 @@ export function visitorCenterTemplate(center) {
   </li>`;
 }
 
-export function activityListTemplate(activities) {
+export function activityTemplate(activities) {
   return activities.map((activity) => `<li>${activity.name}</li>`).join("");
 }
 
