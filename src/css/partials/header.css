@@ -208,6 +208,14 @@
   display: flex;
 }
 
+.global-nav__toggle[aria-expanded="false"] > .global-nav__toggle--open {
+  display: none;
+}
+
+.global-nav__toggle[aria-expanded="false"] > .global-nav__toggle--closed {
+  display: flex;
+}
+
 .global-nav__split-button .icon {
   transition: all 0.3s;
 }
@@ -252,7 +260,6 @@
   font-size: 0.8rem;
 }
 
-
 /* Park Nav Styling */
 
 .park-nav > ul {
@@ -281,4 +288,3 @@
   width: 24px;
   height: 24px;
 }
-
